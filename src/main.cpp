@@ -11,7 +11,11 @@
 
 
 // 16b A webserver is a host that can send data at the request of a client.
-// 
+// 16a When a client cll for a get, it want's to request/recieve data,
+// when the client call for a post, it wants to send data. 
+
+// 16c. The code below now works. Replace the SSID and password your SSID and PASSWORD.
+
 
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
@@ -39,8 +43,7 @@ void setup() {
   
   // Connect to WiFi network
   Serial.println();
-  wifiMulti.addAP("IoTFotonik", "Cyberteknologi");  // add Wi-Fi networks you want to connect to
-  wifiMulti.addAP("<LW_POCO>", "<ezpz42069>");  
+  wifiMulti.addAP("SSID", "PASSWORD");  
   
   Serial.println();
   Serial.print("Connecting ...");
