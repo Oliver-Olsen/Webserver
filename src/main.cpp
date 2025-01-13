@@ -39,7 +39,6 @@ void setup() {
   
   // Connect to WiFi network
   Serial.println();
-  wifiMulti.addAP("IoTFotonik", "Cyberteknologi");  // add Wi-Fi networks you want to connect to
   wifiMulti.addAP("<LW_POCO>", "<ezpz42069>");  
   
   Serial.println();
